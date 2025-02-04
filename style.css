@@ -1,0 +1,57 @@
+html{
+  height:100%;
+}
+
+body{
+  position:relative;
+  margin:0px;
+  height:95%;
+  padding:5px;
+}
+
+#chat{
+  height:85%;
+  overflow-y:scroll;
+}
+
+#align-center{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+#message-box{
+  position: fixed;
+  bottom: 0;
+  width:90%;
+  height:15%;
+  display:flex;
+  align-items:center;
+}
+
+#message-box *{
+  margin:10px;
+}
+
+#user{
+  height:50%;
+  flex:1;
+}
+
+#message{
+  height:50%;
+  flex:20;
+}
+
+#send{
+  height:50%;
+  flex:3;
+}
+
+.user{
+  font-weight:bold;
+}
+
+.messages{
+  margin:5px;
+}
