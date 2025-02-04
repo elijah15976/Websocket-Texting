@@ -8,14 +8,7 @@ const fs = require('fs');
 //HTTP Server
 http.createServer(function (req, res) {
   console.log(req.url);
-  if(req.url == "/jquery.js"){
-    fs.readFile('jquery.js', function(err, data) {
-      res.writeHead(200, {'Content-Type': 'text/javascript'});
-      res.write(data);
-      return res.end();
-    });
-  }
-  else if(req.url == "/script.js"){
+  if(req.url == "/script.js"){
     fs.readFile('script.js', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/javascript'});
       res.write(data);
